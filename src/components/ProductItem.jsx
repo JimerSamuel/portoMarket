@@ -16,6 +16,7 @@ const ProductItem = ({ product }) => {
       <div className="product-info">
         <div>
           <p>${product.price}</p>
+          <p>{product.description}</p>
           <p>{product.title}</p>
         </div>
         <figure onClick={() => handleClick(product)}>

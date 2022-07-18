@@ -21,12 +21,12 @@ const Login = () => {
         <img src={logo} alt="logo" className="logo" />
         <form action="/" className="form" ref={form}>
           <label htmlFor="email" className="label">
-            Email address
+            Correo Electronico
           </label>
           <input
             type="text"
             name="email"
-            placeholder="platzi@example.cm"
+            placeholder="CetiPortoviejo@example.cm"
             className="input input-email"
           />
           <label htmlFor="password" className="label">
@@ -42,11 +42,13 @@ const Login = () => {
             onClick={handleSubmit}
             className="primary-button login-button"
           >
-            Log in
+            Iniciar Sesion
           </button>
-          <a href="/">Forgot my password</a>
+          <a href="/">Recuperar mi contraseña</a>
         </form>
-        <button className="secondary-button signup-button">Sign up</button>
+        <button className="secondary-button signup-button">
+          Crear una cuenta
+        </button>
       </div>
     </div>
   );

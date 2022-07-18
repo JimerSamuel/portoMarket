@@ -26,26 +26,26 @@ const Header = () => {
             <a href="/">All</a>
           </li>
           <li>
-            <a href="/">Clothes</a>
+            <a href="/">Ropa</a>
           </li>
           <li>
-            <a href="/">Electronics</a>
+            <a href="/">Electronicos</a>
           </li>
           <li>
-            <a href="/">Furnitures</a>
+            <a href="/">Hogar</a>
           </li>
           <li>
-            <a href="/">Toys</a>
+            <a href="/">Juguetes</a>
           </li>
           <li>
-            <a href="/">Others</a>
+            <a href="/">Otros</a>
           </li>
         </ul>
       </div>
       <div className="navbar-right">
         <ul>
           <li className="navbar-email" onClick={handleToggle}>
-            platzi@example.com
+            CetiPortoviejo@example.com
           </li>
           <li
             className="navbar-shopping-cart"

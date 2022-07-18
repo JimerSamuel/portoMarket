@@ -1,12 +1,13 @@
-import React from 'react';
-import ProductList from '@containers/ProductList';
+import React from "react";
+import PasswordRecovery from "@pages/PasswordRecovery";
+import SendEmail from "./SendEmail";
 
 const Home = () => {
-	return (
-		<>
-			<ProductList />
-		</>
-	);
-}
+  return (
+    <>
+      <SendEmail />
+    </>
+  );
+};
 
 export default Home;
