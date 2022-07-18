@@ -5,12 +5,19 @@
 	padding: 24px;
 	box-sizing: border-box;
 	position: absolute;
-	right: 0;
+	right: -360px;
 	background-color: white;
 	top: 60px;
 	bottom: 0;
 	border-radius: 6px;
-	border: 1px solid var(--text-input-field);
+	border: 1px solid var(--very-light-pink);
+	position: fixed;
+	transition: 1s ease;
+	animation: swipeLeft 1s ease forwards;
+}
+
+@keyframes swipeLeft {
+	100% {transform: translateX(-360px);}
 }
 .title-container {
 	display: flex;
@@ -23,6 +30,13 @@
 	font-size: var(--lg);
 	font-weight: bold;
 }
+
+.my-order-content{
+  overflow-y: scroll;
+  max-height: 400px;
+  scroll-behavior: smooth;
+}
+
 .order {
 	display: grid;
 	grid-template-columns: auto 1fr;
