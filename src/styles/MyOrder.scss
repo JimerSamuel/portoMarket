@@ -11,7 +11,16 @@
   bottom: 0;
   border-radius: 6px;
   border: 1px solid var(--very-light-pink);
+  overflow-y: auto;
+  height: 360px;
 }
+
+.my-order-content{
+  overflow-y: scroll;
+  max-height: 400px;
+  scroll-behavior: smooth;
+}
+
 .title-container {
   display: flex;
 }
