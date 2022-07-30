@@ -2,11 +2,14 @@
   "name": "portomarket",
   "version": "1.0.0",
   "description": "PortoMarket eshop",
+  "homepage": "ttps://JimerSamuel.github.io/portoMarket",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d dist"
   },
   "repository": {
     "type": "git",
@@ -40,6 +43,7 @@
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "mini-css-extract-plugin": "^2.6.1",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",
